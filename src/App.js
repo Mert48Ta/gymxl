@@ -1,7 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { Bars3Icon, XMarkIcon, CheckIcon, FireIcon, BoltIcon, HeartIcon, UserGroupIcon, ClockIcon, SparklesIcon, PhoneIcon, EnvelopeIcon, MapPinIcon, LightBulbIcon, SunIcon, TrophyIcon, ShieldCheckIcon, ArrowTrendingUpIcon, UserCircleIcon, ChatBubbleLeftRightIcon, HandThumbUpIcon, PhotoIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
-import { HeartIcon as HeartIconSolid, LightBulbIcon as LightBulbIconSolid, SunIcon as SunIconSolid, TrophyIcon as TrophyIconSolid, ShieldCheckIcon as ShieldCheckIconSolid, ArrowTrendingUpIcon as ArrowTrendingUpIconSolid, BoltIcon as BoltIconSolid, FireIcon as FireIconSolid, UserGroupIcon as UserGroupIconSolid, ClockIcon as ClockIconSolid, SparklesIcon as SparklesIconSolid, UserCircleIcon as UserCircleIconSolid, ChatBubbleLeftRightIcon as ChatBubbleLeftRightIconSolid, HandThumbUpIcon as HandThumbUpIconSolid, PhotoIcon as PhotoIconSolid } from '@heroicons/react/24/solid';
+import { 
+  Bars3Icon, 
+  XMarkIcon, 
+  CheckIcon, 
+  FireIcon,
+  HeartIcon,
+  UserGroupIcon, 
+  ClockIcon, 
+  SparklesIcon, 
+  PhoneIcon, 
+  EnvelopeIcon, 
+  MapPinIcon, 
+  LightBulbIcon,
+  SunIcon, 
+  TrophyIcon, 
+  ShieldCheckIcon, 
+  ArrowTrendingUpIcon,
+  ChatBubbleLeftRightIcon, 
+  HandThumbUpIcon,
+  ChevronDownIcon
+} from '@heroicons/react/24/outline';
+import { 
+  LightBulbIcon as LightBulbIconSolid,
+  SunIcon as SunIconSolid,
+  TrophyIcon as TrophyIconSolid,
+  ShieldCheckIcon as ShieldCheckIconSolid,
+  ArrowTrendingUpIcon as ArrowTrendingUpIconSolid,
+  FireIcon as FireIconSolid,
+  UserGroupIcon as UserGroupIconSolid,
+  ClockIcon as ClockIconSolid,
+  SparklesIcon as SparklesIconSolid
+} from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
 
 function App() {
