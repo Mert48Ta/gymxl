@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { 
   Bars3Icon, 
@@ -19,7 +19,9 @@ import {
   ArrowTrendingUpIcon,
   ChatBubbleLeftRightIcon, 
   HandThumbUpIcon,
-  ChevronDownIcon
+  ChevronDownIcon,
+  BoltIcon,
+  UserCircleIcon
 } from '@heroicons/react/24/outline';
 import { 
   LightBulbIcon as LightBulbIconSolid,
@@ -30,7 +32,12 @@ import {
   FireIcon as FireIconSolid,
   UserGroupIcon as UserGroupIconSolid,
   ClockIcon as ClockIconSolid,
-  SparklesIcon as SparklesIconSolid
+  SparklesIcon as SparklesIconSolid,
+  HeartIcon as HeartIconSolid,
+  BoltIcon as BoltIconSolid,
+  UserCircleIcon as UserCircleIconSolid,
+  ChatBubbleLeftRightIcon as ChatBubbleLeftRightIconSolid,
+  HandThumbUpIcon as HandThumbUpIconSolid
 } from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
 
