@@ -13,7 +13,15 @@ import {
   EnvelopeIcon, 
   MapPinIcon, 
   ChevronDownIcon,
-  BoltIcon
+  BoltIcon,
+  UserCircleIcon,
+  ChatBubbleLeftRightIcon,
+  HandThumbUpIcon,
+  LightBulbIcon,
+  SunIcon,
+  TrophyIcon,
+  ShieldCheckIcon,
+  ArrowTrendingUpIcon
 } from '@heroicons/react/24/outline';
 import { 
   LightBulbIcon as LightBulbIconSolid,
@@ -28,8 +36,7 @@ import {
   HeartIcon as HeartIconSolid,
   BoltIcon as BoltIconSolid,
   UserCircleIcon as UserCircleIconSolid,
-  ChatBubbleLeftRightIcon as ChatBubbleLeftRightIconSolid,
-  HandThumbUpIcon as HandThumbUpIconSolid
+  ChatBubbleLeftRightIcon as ChatBubbleLeftRightIconSolid
 } from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
 
@@ -991,14 +998,13 @@ function App() {
                 className="w-full h-[300px] rounded-lg overflow-hidden"
               >
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.2718441828513!2d28.977554075911754!3d41.03749237134406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7650656bd63%3A0x8ca058b28c20b6c3!2zVGFrc2ltIE1leWRhbsSxLCBHw7xtw7zFn3N1eXUsIDM0NDM1IEJleW_En2x1L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1708701145317!5m2!1str!2str"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.952846366099!2d28.97206661541386!3d41.02797997929861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab63f6f4f1f1d%3A0x7c761d4c2c1c1c1c!2sGymXL!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str" 
+                  width="100%" 
+                  height="450" 
+                  style={{ border: 0 }} 
+                  allowFullScreen="" 
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="rounded-lg"
+                  title="GymXL Konum Haritası"
                 ></iframe>
               </motion.div>
             </motion.div>
