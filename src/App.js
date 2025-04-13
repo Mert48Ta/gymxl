@@ -15,10 +15,6 @@ import {
   ChevronDownIcon,
   BoltIcon
 } from '@heroicons/react/24/outline';
-import { 
-  HeartIcon as HeartIconSolid,
-  BoltIcon as BoltIconSolid
-} from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
 
 function App() {
