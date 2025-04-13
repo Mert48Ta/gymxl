@@ -915,10 +915,10 @@ function App() {
             className="text-center"
           >
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              İletişim
+              3 Gün Ücretsiz Deneme
             </h2>
             <p className="mt-4 text-lg text-gray-300">
-              Bizimle iletişime geçin, size en uygun programı birlikte belirleyelim.
+              Hemen ücretsiz deneme için bize ulaşın. Size özel hazırlanmış programımızı birlikte belirleyelim.
             </p>
           </motion.div>
           <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2">
