@@ -13,30 +13,11 @@ import {
   EnvelopeIcon, 
   MapPinIcon, 
   ChevronDownIcon,
-  BoltIcon,
-  UserCircleIcon,
-  ChatBubbleLeftRightIcon,
-  HandThumbUpIcon,
-  LightBulbIcon,
-  SunIcon,
-  TrophyIcon,
-  ShieldCheckIcon,
-  ArrowTrendingUpIcon
+  BoltIcon
 } from '@heroicons/react/24/outline';
 import { 
-  LightBulbIcon as LightBulbIconSolid,
-  SunIcon as SunIconSolid,
-  TrophyIcon as TrophyIconSolid,
-  ShieldCheckIcon as ShieldCheckIconSolid,
-  ArrowTrendingUpIcon as ArrowTrendingUpIconSolid,
-  FireIcon as FireIconSolid,
-  UserGroupIcon as UserGroupIconSolid,
-  ClockIcon as ClockIconSolid,
-  SparklesIcon as SparklesIconSolid,
   HeartIcon as HeartIconSolid,
-  BoltIcon as BoltIconSolid,
-  UserCircleIcon as UserCircleIconSolid,
-  ChatBubbleLeftRightIcon as ChatBubbleLeftRightIconSolid
+  BoltIcon as BoltIconSolid
 } from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
 
