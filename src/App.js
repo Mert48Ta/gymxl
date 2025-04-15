@@ -506,7 +506,7 @@ function App() {
                 whileHover={{ scale: 1.05, rotate: -2 }}
                 className="bg-secondary/50 p-4 rounded-lg transform transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
               >
-                <h3 className="text-xl font-bold text-primary">07/23</h3>
+                <h3 className="text-xl font-bold text-primary">Premium</h3>
                 <p className="text-gray-300">Hizmet</p>
               </motion.div>
             </div>
@@ -528,7 +528,7 @@ function App() {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6"
                 >
-                  <BoltIcon className="w-8 h-8 text-primary" />
+                  <HeartIcon className="w-8 h-8 text-primary" />
                 </motion.div>
                 <h3 className="text-xl font-bold text-white mb-4">Modern Ekipman</h3>
                 <p className="text-gray-300">En son teknoloji fitness ekipmanlarıyla hizmetinizdeyiz. Tüm ekipmanlarımız düzenli olarak bakımdan geçirilmektedir. Cardio bölümünde 20+ makine, ağırlık bölümünde 30+ makine ve fonksiyonel antrenman alanında özel ekipmanlar bulunmaktadır.</p>
@@ -548,10 +548,10 @@ function App() {
                   transition={{ duration: 0.5, delay: 0.5 }}
                   className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6"
                 >
-                  <UserGroupIcon className="w-8 h-8 text-primary" />
+                  <HeartIcon className="w-8 h-8 text-primary" />
                 </motion.div>
-                <h3 className="text-xl font-bold text-white mb-4">Uzman Kadro</h3>
-                <p className="text-gray-300">Alanında uzman eğitmenlerimizle kişisel gelişiminize destek oluyoruz. Her eğitmenimiz en az 5 yıllık deneyime sahiptir. Spor bilimleri, fizyoterapi ve beslenme alanlarında uzmanlaşmış eğitmenlerimizle hedeflerinize ulaşmanıza yardımcı oluyoruz.</p>
+                <h3 className="text-xl font-bold text-white mb-4">Premium Hizmet</h3>
+                <p className="text-gray-300">Size özel hazırlanmış programlar ve profesyonel eğitmenlerle hedeflerinize ulaşmanıza yardımcı oluyoruz.</p>
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, x: 50 }}
@@ -568,10 +568,10 @@ function App() {
                   transition={{ duration: 0.5, delay: 0.6 }}
                   className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6"
                 >
-                  <ClockIcon className="w-8 h-8 text-primary" />
+                  <HeartIcon className="w-8 h-8 text-primary" />
                 </motion.div>
-                <h3 className="text-xl font-bold text-white mb-4">07/23 Hizmet</h3>
-                <p className="text-gray-300">Size uygun zamanlarda antrenman yapma imkanı sunuyoruz. Sabah 07:00'den akşam 23:00'e kadar açık olan salonumuzda istediğiniz zaman antrenman yapabilirsiniz. Ayrıca özel antrenman alanlarımız ve grup dersleri için ayrılmış stüdyolarımız bulunmaktadır.</p>
+                <h3 className="text-xl font-bold text-white mb-4">Uzman Kadro</h3>
+                <p className="text-gray-300">Alanında uzman eğitmenlerimizle kişisel gelişiminize destek oluyoruz. Her eğitmenimiz en az 5 yıllık deneyime sahiptir. Spor bilimleri, fizyoterapi ve beslenme alanlarında uzmanlaşmış eğitmenlerimizle hedeflerinize ulaşmanıza yardımcı oluyoruz.</p>
               </motion.div>
             </div>
           </div>
