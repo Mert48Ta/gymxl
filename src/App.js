@@ -6,8 +6,6 @@ import {
   CheckIcon, 
   FireIcon,
   HeartIcon,
-  UserGroupIcon, 
-  ClockIcon, 
   SparklesIcon, 
   PhoneIcon, 
   EnvelopeIcon, 
@@ -528,7 +526,7 @@ function App() {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6"
                 >
-                  <HeartIcon className="w-8 h-8 text-primary" />
+                  <FireIcon className="w-8 h-8 text-primary" />
                 </motion.div>
                 <h3 className="text-xl font-bold text-white mb-4">Modern Ekipman</h3>
                 <p className="text-gray-300">En son teknoloji fitness ekipmanlarıyla hizmetinizdeyiz. Tüm ekipmanlarımız düzenli olarak bakımdan geçirilmektedir. Cardio bölümünde 20+ makine, ağırlık bölümünde 30+ makine ve fonksiyonel antrenman alanında özel ekipmanlar bulunmaktadır.</p>
@@ -568,7 +566,7 @@ function App() {
                   transition={{ duration: 0.5, delay: 0.6 }}
                   className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6"
                 >
-                  <HeartIcon className="w-8 h-8 text-primary" />
+                  <BoltIcon className="w-8 h-8 text-primary" />
                 </motion.div>
                 <h3 className="text-xl font-bold text-white mb-4">Uzman Kadro</h3>
                 <p className="text-gray-300">Alanında uzman eğitmenlerimizle kişisel gelişiminize destek oluyoruz. Her eğitmenimiz en az 5 yıllık deneyime sahiptir. Spor bilimleri, fizyoterapi ve beslenme alanlarında uzmanlaşmış eğitmenlerimizle hedeflerinize ulaşmanıza yardımcı oluyoruz.</p>
