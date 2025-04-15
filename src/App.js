@@ -235,7 +235,7 @@ function App() {
                 duration={500}
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 md:py-4 md:text-lg md:px-10 transition-all duration-300"
               >
-                ÜCRETSİZ DENE
+                HEMEN BAŞLA
               </Link>
             </motion.div>
             <motion.div 
@@ -915,10 +915,10 @@ function App() {
             className="text-center"
           >
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              3 Gün Ücretsiz Deneme
+              Bize Ulaşın
             </h2>
             <p className="mt-4 text-lg text-gray-300">
-              Hemen ücretsiz deneme için bize ulaşın. Size özel hazırlanmış programımızı birlikte belirleyelim.
+              Size özel hazırlanmış programımızı birlikte belirleyelim.
             </p>
           </motion.div>
           <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2">
