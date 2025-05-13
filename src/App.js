@@ -6,13 +6,13 @@ import {
   CheckIcon, 
   FireIcon,
   HeartIcon,
-  SparklesIcon, 
   PhoneIcon, 
   EnvelopeIcon, 
   MapPinIcon, 
   ChevronDownIcon,
   BoltIcon
 } from '@heroicons/react/24/outline';
+import { FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 function App() {
@@ -81,9 +81,6 @@ function App() {
               <Link to="trainers" smooth={true} duration={500} className="text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">
                 Eğitmenler
               </Link>
-              <Link to="pricing" smooth={true} duration={500} className="text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">
-                Paketler
-              </Link>
               <Link to="contact" smooth={true} duration={500} className="text-gray-300 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">
                 İletişim
               </Link>
@@ -147,15 +144,6 @@ function App() {
               onClick={toggleMenu}
             >
               Eğitmenler
-            </Link>
-            <Link 
-              to="pricing" 
-              smooth={true} 
-              duration={500} 
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary hover:bg-gray-700 transition-colors duration-200"
-              onClick={toggleMenu}
-            >
-              Paketler
             </Link>
             <Link 
               to="contact" 
@@ -270,166 +258,6 @@ function App() {
             <ChevronDownIcon className="h-8 w-8 text-primary animate-bounce" />
           </Link>
         </motion.div>
-      </section>
-
-      {/* Pricing Section */}
-      <section id="pricing" className="py-20 bg-secondary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              Fiyatlandırma
-            </h2>
-            <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">
-              Size en uygun paketi seçin ve hemen başlayın. Tüm paketlerimizde ilk deneme dersi ücretsizdir.
-            </p>
-          </motion.div>
-          <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-3">
-            <motion.div 
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-              className="bg-black p-8 rounded-lg relative overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 bg-gray-800 text-white px-4 py-1 rounded-bl-lg text-sm font-bold">
-                BAŞLANGIÇ
-              </div>
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center">
-                  <HeartIcon className="w-8 h-8 text-primary" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4 text-center">Başlangıç Paketi</h3>
-              <p className="text-4xl font-bold text-primary mb-6 text-center">₺299<span className="text-lg text-gray-400">/ay</span></p>
-              <ul className="text-gray-300 space-y-4 mb-8">
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Sınırsız salon kullanımı
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Temel ekipman eğitimi
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Aylık vücut ölçümü
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Grup derslerine katılım
-                </li>
-              </ul>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="#contact"
-                className="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-all duration-300"
-              >
-                Hemen Başla
-              </motion.a>
-            </motion.div>
-            <motion.div 
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-              className="bg-black p-8 rounded-lg relative overflow-hidden border-2 border-primary"
-            >
-              <div className="absolute top-0 right-0 bg-primary text-white px-4 py-1 rounded-bl-lg text-sm font-bold">
-                POPÜLER
-              </div>
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center">
-                  <FireIcon className="w-8 h-8 text-primary" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4 text-center">Premium Paket</h3>
-              <p className="text-4xl font-bold text-primary mb-6 text-center">₺599<span className="text-lg text-gray-400">/ay</span></p>
-              <ul className="text-gray-300 space-y-4 mb-8">
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Sınırsız salon kullanımı
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Haftada 2 kişisel antrenman
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Aylık beslenme danışmanlığı
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Tüm grup derslerine katılım
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Özel antrenman programı
-                </li>
-              </ul>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="#contact"
-                className="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-all duration-300"
-              >
-                Hemen Başla
-              </motion.a>
-            </motion.div>
-            <motion.div 
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-              className="bg-black p-8 rounded-lg relative overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 bg-gray-800 text-white px-4 py-1 rounded-bl-lg text-sm font-bold">
-                ELITE
-              </div>
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center">
-                  <SparklesIcon className="w-8 h-8 text-primary" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4 text-center">Elite Paket</h3>
-              <p className="text-4xl font-bold text-primary mb-6 text-center">₺999<span className="text-lg text-gray-400">/ay</span></p>
-              <ul className="text-gray-300 space-y-4 mb-8">
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Sınırsız salon kullanımı
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Sınırsız kişisel antrenman
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Haftalık beslenme danışmanlığı
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Tüm grup derslerine katılım
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Özel antrenman programı
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="w-5 h-5 text-primary mr-2" />
-                  Supplement danışmanlığı
-                </li>
-              </ul>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="#contact"
-                className="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-all duration-300"
-              >
-                Hemen Başla
-              </motion.a>
-            </motion.div>
-          </div>
-        </div>
       </section>
 
       {/* About Section */}
@@ -735,15 +563,11 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/gym1.png" 
+                  src="/images/foto1.jpg" 
                   alt="Modern Ekipmanlar" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white">Modern Ekipmanlar</h3>
-                <p className="mt-2 text-gray-300">En son teknoloji fitness ekipmanlarıyla donatılmış salonumuz.</p>
-              </div>
             </motion.div>
 
             <motion.div 
@@ -753,15 +577,11 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/gym2.png" 
+                  src="/images/foto3.jpg" 
                   alt="Grup Dersleri" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white">Grup Dersleri</h3>
-                <p className="mt-2 text-gray-300">Profesyonel eğitmenler eşliğinde grup fitness dersleri.</p>
-              </div>
             </motion.div>
 
             <motion.div 
@@ -771,15 +591,11 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/gym3.png" 
+                  src="/images/foto2.jpg" 
                   alt="Özel Antrenman Alanları" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white">Özel Antrenman Alanları</h3>
-                <p className="mt-2 text-gray-300">Kişisel antrenman için özel tasarlanmış alanlar.</p>
-              </div>
             </motion.div>
 
             <motion.div 
@@ -789,15 +605,11 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/gym4.png" 
+                  src="/images/foto4.jpg" 
                   alt="Yoga ve Pilates Stüdyoları" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white">Yoga ve Pilates Stüdyoları</h3>
-                <p className="mt-2 text-gray-300">Zihinsel ve fiziksel denge için özel stüdyolar.</p>
-              </div>
             </motion.div>
 
             <motion.div 
@@ -807,15 +619,11 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/gym5.png" 
+                  src="/images/foto5.jpg" 
                   alt="Dinlenme Alanları" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white">Dinlenme Alanları</h3>
-                <p className="mt-2 text-gray-300">Antrenman sonrası dinlenme ve sosyalleşme alanları.</p>
-              </div>
             </motion.div>
 
             <motion.div 
@@ -825,14 +633,10 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/gym6.png" 
+                  src="/images/foto6.jpg" 
                   alt="Etkinlikler" 
                   className="w-full h-full object-cover"
                 />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white">Etkinlikler</h3>
-                <p className="mt-2 text-gray-300">Düzenlenen özel etkinlikler ve yarışmalardan kareler.</p>
               </div>
             </motion.div>
           </div>
@@ -938,7 +742,7 @@ function App() {
                     </div>
                     <div className="ml-4">
                       <p className="text-white font-medium">Adres</p>
-                      <p className="text-gray-300">Atatürk Caddesi No:123, İstanbul</p>
+                      <p className="text-gray-300">Yalıkavak, Bodrum Cd. No:13, 48000 Bodrum/Muğla</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -949,7 +753,7 @@ function App() {
                     </div>
                     <div className="ml-4">
                       <p className="text-white font-medium">Telefon</p>
-                      <p className="text-gray-300">+90 (212) 123 45 67</p>
+                      <p className="text-gray-300">0542 625 89 76</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -1080,6 +884,17 @@ function App() {
         </div>
       </section>
 
+      {/* WhatsApp Butonu */}
+      <a
+        href="https://wa.me/905426258976?text=Bilgi%20almak%20istiyorum"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed left-4 bottom-4 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg transition-all duration-300 md:w-16 md:h-16"
+        title="WhatsApp ile Bilgi Al"
+      >
+        <FaWhatsapp className="w-8 h-8 md:w-10 md:h-10 text-white" />
+      </a>
+
       {/* Footer */}
       <footer className="bg-secondary">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -1097,7 +912,6 @@ function App() {
                 <li><a href="#about" className="text-gray-300 hover:text-white">Hakkımızda</a></li>
                 <li><a href="#services" className="text-gray-300 hover:text-white">Hizmetler</a></li>
                 <li><a href="#trainers" className="text-gray-300 hover:text-white">Eğitmenler</a></li>
-                <li><a href="#pricing" className="text-gray-300 hover:text-white">Fiyatlandırma</a></li>
                 <li><a href="#contact" className="text-gray-300 hover:text-white">İletişim</a></li>
               </ul>
             </div>
