@@ -563,7 +563,7 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/foto1.jpg" 
+                  src="/images/foto2.jpg" 
                   alt="Modern Ekipmanlar" 
                   className="w-full h-full object-cover"
                 />
@@ -591,7 +591,7 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/foto2.jpg" 
+                  src="/images/foto6.jpg" 
                   alt="Özel Antrenman Alanları" 
                   className="w-full h-full object-cover"
                 />
@@ -605,7 +605,7 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/foto4.jpg" 
+                  src="/images/foto5.jpg" 
                   alt="Yoga ve Pilates Stüdyoları" 
                   className="w-full h-full object-cover"
                 />
@@ -619,7 +619,7 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/foto5.jpg" 
+                  src="/images/foto4.jpg" 
                   alt="Dinlenme Alanları" 
                   className="w-full h-full object-cover"
                 />
@@ -633,7 +633,7 @@ function App() {
             >
               <div className="h-64 bg-gradient-to-br from-primary/30 to-secondary/80 relative overflow-hidden">
                 <img 
-                  src="/images/foto6.jpg" 
+                  src="/images/foto1.jpg" 
                   alt="Etkinlikler" 
                   className="w-full h-full object-cover"
                 />
