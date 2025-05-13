@@ -973,13 +973,14 @@ function App() {
                 className="w-full h-[300px] rounded-lg overflow-hidden"
               >
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.952846366099!2d28.97206661541386!3d41.02797997929861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab63f6f4f1f1d%3A0x7c761d4c2c1c1c1c!2sGymXL!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.2690724483805!2d27.3104943!3d37.098712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be710f97e45859%3A0x8555b9666938cf6a!2sXLarge%20Fitness%20GYM%20Yal%C4%B1kavak!5e0!3m2!1str!2str!4v1747153510967!5m2!1str!2str" 
                   width="100%" 
                   height="450" 
                   style={{ border: 0 }} 
                   allowFullScreen="" 
                   loading="lazy"
-                  title="GymXL Konum Haritası"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="XLarge Fitness GYM Yalıkavak Konum Haritası"
                 ></iframe>
               </motion.div>
             </motion.div>
