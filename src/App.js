@@ -898,7 +898,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-secondary">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl font-bold text-white">GYM<span className="text-primary">XL</span></h2>
               <p className="mt-4 text-gray-300">
@@ -927,9 +927,8 @@ function App() {
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">İletişim</h3>
               <ul className="space-y-2">
-                <li className="text-gray-300">Atatürk Caddesi No:123</li>
-                <li className="text-gray-300">İstanbul, Türkiye</li>
-                <li className="text-gray-300">+90 (212) 123 45 67</li>
+                <li className="text-gray-300">Yalıkavak, Bodrum Cd. No:13, 48000 Bodrum/Muğla</li>
+                <li className="text-gray-300">0542 625 89 76</li>
                 <li className="text-gray-300">info@gymxl.com</li>
               </ul>
             </div>
