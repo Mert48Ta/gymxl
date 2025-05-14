@@ -189,7 +189,7 @@ function App() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="block"
             >
-              GÜÇLÜ OL
+              THE GYM
             </motion.span>
             <motion.span 
               initial={{ x: 100, opacity: 0 }}
@@ -197,7 +197,7 @@ function App() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="block text-primary"
             >
-              BAŞARIYA ULAŞ
+              NEVER LIES
             </motion.span>
           </motion.h1>
           <motion.p 
