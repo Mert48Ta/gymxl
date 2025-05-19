@@ -796,7 +796,7 @@ function App() {
               className="bg-secondary/20 p-6 rounded-lg"
             >
               <h3 className="text-xl font-bold text-white mb-6">Bize Ulaşın</h3>
-              <form className="space-y-4">
+              <form action="https://formspree.io/f/xqaqjqgq" method="POST" className="space-y-4">
                 <motion.div 
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
